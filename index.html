@@ -20,6 +20,15 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- emailjs -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("TD9NdAO0FvukQ8gfw");
+   })();
+</script>
   </head>
   <body>
     <header>
@@ -201,72 +210,53 @@ Thank you for taking the time to read my about page. If you have any questions o
       <h2 class="heading">Latest <span>Projects</span></h2>
       <div class="portfolio-container">
         <div class="portfolio-box">
-          <img src="/images/computer.jpeg" alt="project" />
+          <img src="/images/parmacy.jpeg" alt="project" />
           <div class="portfolio-layer">
-            <h4>Web design</h4>
+            <h4>E-commerce-Pharmacy</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-              odit.
+             Using Html,Css,js,React,Router and ReduxToolkit
             </p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
         <div class="portfolio-box">
-          <img src="/images/computer.jpeg" alt="project" />
+          <img src="/images/movie.jpeg" alt="project" />
           <div class="portfolio-layer">
-            <h4>Web design</h4>
+            <h4>streamIt-Movie</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-              odit.
+              Using Html,Css,js,React,Router
             </p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
         <div class="portfolio-box">
-          <img src="/images/computer.jpeg" alt="project" />
+          <img src="/images/news.jpeg" alt="project" />
           <div class="portfolio-layer">
-            <h4>Web design</h4>
+            <h4>NewsPaper</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-              odit.
+              Using Html,Css,js,React,Router
             </p>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
-        <div class="portfolio-box">
-          <img src="/images/computer.jpeg" alt="project" />
-          <div class="portfolio-layer">
-            <h4>Web design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-              odit.
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-      </div>
+        
     </section>
     <!-- contact-section -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
-      <form action="#">
+      <div>
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-        </div>
-        <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
-        </div>
+          <input type="text" id="name" placeholder="Full Name" />
+          <input type="email" id="email" placeholder="Email Address" />
+        </div>   
         <textarea
-          name=""
-          id=""
+          id="message"
           cols="30"
           rows="10"
           placeholder="Your Message"
         ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
+        <button class="btn" onclick="sendMail()">Send Message</button>
+      </div>
     </section>
     <!-- footer design -->
     <footer class="footer">

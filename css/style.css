@@ -310,21 +310,21 @@ span {
   margin-bottom: 3rem;
 }
 
-.contact form {
+.contact div {
   max-width: 70rem;
   margin: 1rem auto;
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.contact form .input-box {
+.contact div .input-box {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.contact form .input-box input,
-.contact form textarea {
+.contact div .input-box input,
+.contact div textarea {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
@@ -333,14 +333,14 @@ span {
   border-radius: 0.8rem;
   margin: 0.7rem 0;
 }
-.contact form .input-box input {
+.contact div .input-box input {
   width: 49%;
 }
-.contact form textarea {
+.contact div textarea {
   resize: none;
 }
 
-.contact form .btn {
+.contact div .btn {
   margin-top: 2rem;
   cursor: pointer;
 }
